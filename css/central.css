@@ -11,14 +11,13 @@
   padding: 0;
 }
 
-
 a {
   color: white;
 }
 
 body {
   background-color: rgba(237, 9, 89, 0.789);
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", "Open Sans";
   color: white;
 }
 
@@ -50,10 +49,9 @@ body {
   margin-right: 160px;
 }
 
-@media (max-width: 843px) {
+@media (max-width: 650px) {
   .one_horizontal .car_container {
-    margin-right: 0;
-    margin-bottom: 15px;
+    margin: 30px;
   }
 }
 
@@ -81,7 +79,7 @@ body {
   .two_horizontal .search_bar_container {
     flex-direction: column;
     align-items: center;
-    width: 300px;
+    width: 90vw;
   }
 }
 
@@ -171,6 +169,7 @@ body {
   width: 100%;
   position: absolute;
   top: 228px;
+  margin-top: 30px;
 }
 
 @media (max-width: 843px) {
@@ -217,7 +216,7 @@ body {
 
 @media (max-width: 440px) {
   .wide_container_secondary .overlay_container .item_container .title {
-    font-size: 18px;
+    font-size: 22px;
   }
 }
 
@@ -248,7 +247,7 @@ body {
 
 @media (max-width: 440px) {
   .wide_container_secondary .overlay_container .item_container .container_horizontal {
-    font-size: 12px;
+    font-size: 16px;
     width: 220px;
   }
 }
@@ -311,8 +310,8 @@ body {
 
 @media (max-width: 440px) {
   .wide_container_secondary .overlay_container .item_container .book_button_container {
-    width: 100px;
-    font-size: 14px;
+    width: 80vw;
+    font-size: 18px;
   }
 }
 
@@ -338,7 +337,7 @@ body {
 @media (max-width: 440px) {
   .wide_container_secondary .overlay_container .item_container .book_button_container_x {
     width: 100px;
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 

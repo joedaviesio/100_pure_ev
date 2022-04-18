@@ -18,7 +18,7 @@ $primarywhite: white;
 $primarygrey: #766D6D;
 $secondarygrey: #C4C4C4;
 $primaryblue: #507DF0;
-$primaryfont: 'Open Sans';
+$primaryfont: 'Comfortaa', 'Open Sans';
 $breakpoint: 843px;
 $primarypink: rgba(237, 9, 89, 0.789);
 
@@ -55,7 +55,7 @@ $primarypink: rgba(237, 9, 89, 0.789);
 
 body {
   background-color: rgba(237, 9, 89, 0.789);
-  font-family: 'Comfortaa', cursive;
+  font-family: $primaryfont;
   color: white;
 
 }
