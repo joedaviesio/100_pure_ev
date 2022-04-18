@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOILER PLATE</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/css/central.css">
+    <script src="/js/bar_number_picker.js"></script>
+
+</head>
+
+<body>
+<div class="wide_container one_horizontal">
+    <div class="logo_container"><img src="/src/img/tourism_nz.png" alt="" class="img_container"></div>
+    <div class="title_web">NEW</div>
+    <div class="title_web">ZEVLAND</div>
+    <div class="car_container">
+        <i class="fas fa-car fa-3x"></i></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+
+
+</div>
+<div class="wide_container two_horizontal">
+    <form class="search_bar_container" id="sub_form" action="#" method="GET">
+        <div class="enter enter_1">
+            <div class="text_a" style="padding-bottom: 5px;">Add guests</div>
+            <div class="text_a" id="test_a"></div>
+        </div>
+        <div class="enter enter_2">
+            <div class="text_a">Pick up</div>
+            <input type="date" name="first_date" id="first_date" value="2022-01-22" required>
+        </div>
+        <div class="enter enter_3">
+            <div class="text_a">Drop off</div>
+            <input type="date" name="second_date" id="second_date" value="2022-01-28" required>
+        </div>
+        <div class="enter enter_4">
+            <div class="text_a">Distance kms</div>
+            <input type="number" name="kms" id="kms" placeholder="optional (approx)" min="0">
+        </div>
+        <div class="enter_button enter_5">
+            <button type="input" class="search_container" style="border: none;">
+                <i class="fas fa-hand-sparkles fa-2x"></i>
+            </button>
+        </div>
+    </form>
+</div>
+<div class="wide_container" id="video_x">
+    <div class="video_container">
+        <iframe width="1027" height="668" src="https://www.youtube.com/embed/Atf_Af1q_5w?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 40px;" allow='autoplay=1&mute=1' class="iframe_c"></iframe>
+    </div>
+    <!-- \autoplay=1 -->
+</div>
+<div class="wide_container_secondary">
+
+    <div class="overlay_container" id="overlay_container">
+
+
+       <div class="item_container item_container1" id="bonneville">
+
+            <div class="title">EV Triumph BonnEville</div>
+
+            <div class="img" ><img src="/src/img/bonneville.jpg" alt=""class="img_c"></div>
+
+            <span class="container_horizontal">
+                
+                <div class="type">EV Motorcycle,</div>
+
+                <div class="auto">MANUAL,</div>
+                
+                <div class="passengers_number_var">Passengers: VAR</div>
+            
+            </span>
+            <span class="container_horizontal_secondary">
+
+                <div class="blue_text">
+                    <div class="hire_cost_title" >Hire cost:</div>
+                    <div class="petrol_title">Petrol calculation:</div>
+                    <div class="cost_total_title">
+                        Cost + petrol:
+                    </div>
+                </div>
+                <div class="totals">
+                    <div class="hire_cost" id="hire_cost">var</div>
+                    <div class="petrol_cost">var</div>
+                    <div class="cost_title">var</div>
+
+                </div>
+            </span>
+            <div class="book_button_container">
+                <div class="book_text">BOOK</div>
+                <i class="fas fa-hand-sparkles"></i>
+            </div>
+            
+        </div>
+        <div class="item_container item_container2" id="smart">
+
+            <div class="title">Smart Fortwo</div>
+
+            <div class="img" ><img src="/src/img/smart.jpg" alt=""class="img_c"></div>
+
+            <span class="container_horizontal">
+                
+                <div class="type">EV Small Car,</div>
+
+                <div class="auto">AUTO,</div>
+                
+                <div class="passengers_number_var">Passengers: VAR</div>
+            
+            </span>
+            <span class="container_horizontal_secondary">
+
+                <div class="blue_text">
+                    <div class="hire_cost_title">Hire cost:</div>
+                    <div class="petrol_title">Petrol calculation:</div>
+                    <div class="cost_total_title">
+                        Cost + petrol:
+                    </div>
+                </div>
+                <div class="totals">
+                    <div class="hire_cost" >var</div>
+                    <div class="petrol_cost">var</div>
+                    <div class="cost_title">var</div>
+
+                </div>
+            </span>
+            <div class="book_button_container">
+                <div class="book_text">BOOK</div>
+                <i class="fas fa-hand-sparkles"></i>
+            </div>
+            
+        </div>
+        <div class="item_container item_container3" id="tesla">
+
+            <div class="title">Tesla Model S Plaid</div>
+
+            <div class="img" ><img src="/src/img/tesla.jpg" alt=""class="img_c"></div>
+
+            <span class="container_horizontal">
+                
+                <div class="type">EV Large Car,</div>
+
+                <div class="auto">AUTO,</div>
+                
+                <div class="passengers_number_var">Passengers: VAR</div>
+            
+            </span>
+            <span class="container_horizontal_secondary">
+
+                <div class="blue_text">
+                    <div class="hire_cost_title">Hire cost @ $144 per day:</div>
+                    <div class="petrol_title">Petrol  @ 9.7L/100kms:</div>
+                    <div class="cost_total_title">
+                        Cost + petrol @ $2.45L:
+                    </div>
+                </div>
+                <div class="totals">
+                    <div class="hire_cost" id="hire_cost_a">varaaa</div>
+                    <div class="petrol_cost" id="petrol_cost_a">var</div>
+                    <div class="cost_title" id="cost_title_a">var</div>
+
+                </div>
+            </span>
+            <div class="book_button_container">
+                <div class="book_text">BOOK</div>
+                <i class="fas fa-hand-sparkles"></i>
+            </div>
+            
+        </div>
+        <div class="item_container item_container4" id="bulli">
+            
+
+            <div class="title">VW E-Bulli</div>
+
+            <div class="img" ><img src="/src/img/vw.jpg" alt=""class="img_c"></div>
+
+            <span class="container_horizontal">
+                
+                <div class="type">EV Motorhome,</div>
+
+                <div class="auto">AUTO,</div>
+                
+                <div class="passengers_number_var">Passengers: VAR</div>
+            
+            </span>
+            <span class="container_horizontal_secondary">
+
+                <div class="blue_text">
+                    <div class="hire_cost_title">Hire cost:</div>
+                    <div class="petrol_title">Petrol calculation:</div>
+                    <div class="cost_total_title">
+                        Cost + petrol:
+                    </div>
+                </div>
+                <div class="totals">
+                    <div class="hire_cost">var</div>
+                    <div class="petrol_cost">var</div>
+                    <div class="cost_title">var</div>
+
+                </div>
+            </span>
+            <div class="book_button_container">
+                <div class="book_text">BOOK</div>
+                <i class="fas fa-hand-sparkles"></i>
+            </div>
+            
+        </div>
+        <div class="item_container item_container5" id="page_broken">
+            
+
+            <div class="title_a">¯\_(ツ)_/¯</div>
+
+            
+
+            <span class="container_horizontal_secondary">
+
+                <div class="title" style="text-align: center;">
+                    <div class="hire_cost_title" style="text-transform: none;">Sorry our site is currently down for maintenance, we'll be back with you shortly. </div>
+                    <br>
+                    <div class="pure" style="font-size: 20px; color: gray;">100% PURE NZ</div>
+                </div>
+
+
+            </span>
+            <div class="book_button_container">
+                <div class="book_text">home</div>
+                <i class="fas fa-hand-sparkles"></i>
+            </div>
+            
+        </div>
+        <div class="item_container item_container6" id="dates_unavailable">
+            
+
+            <div class="title_a">¯\_(ツ)_/¯</div>
+
+            
+
+            <span class="container_horizontal_secondary">
+
+                <div class="title" style="text-align: center;">
+                    <div class="hire_cost_title" style="text-transform: none;">Unfortunately there are no EVS available for the dates and guest numbers you've selected, please try again.</div>
+                    <br>
+                    <div class="pure" style="font-size: 20px; color: gray;">100% PURE NZ</div>
+                </div>
+
+
+            </span>
+            <div class="book_button_container">
+                <div class="book_text">home</div>
+                <i class="fas fa-hand-sparkles"></i>
+            </div>
+            
+        </div>
+        
+        
+    </div>
+    
+</div>
+
+    <script src="/js/central.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+</body>
+</html>

@@ -1,0 +1,431 @@
+/* imports, all goes through central*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+@import "./definitions";
+@import "./scripting";
+@import url('https://use.typekit.net/lul8rgn.css');
+
+
+
+// all scss file names correspond to the html file names, unless _def otherwise.
+
+.wide_container {
+    @include row_width();
+  }
+  
+  .one_horizontal {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 650px) 
+    {
+    flex-direction: column;
+    align-items: center;
+  
+    }
+
+    
+    
+  
+    .img_container {
+      width: 167px;
+      margin-left: 30px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    .car_container {
+      padding-top:30px;
+      margin-right: 160px;
+      @media (max-width: $breakpoint) 
+        {
+        margin-right: 0;
+        margin-bottom: 15px;
+  
+        }
+    }
+  }
+  
+  .two_horizontal {
+
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+
+    .search_bar_container {
+
+    width: 840px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: $primarywhite;
+    box-shadow: 10px 10px 10px $primaryblue;
+    padding-left: 16px;
+    padding-right: 10px;
+    border-radius: 60px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    @media (max-width: $breakpoint) 
+      {
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+      }
+
+  }
+
+  }
+  
+  .enter {
+      padding-top: 10px;
+    color: black;
+    padding-right: 30px;
+    padding-left: 15px;
+    // border-right: solid 1px $secondarygrey;
+    .text_a {
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .text_b {
+        padding-top: 5px;
+      color: $primarygrey;
+      font-weight: 200;
+    }
+    @media (max-width: $breakpoint) 
+    {
+    border-right: none;
+    }
+  
+  
+  }
+
+  #first_date, #second_date, #kms {
+    border-radius: 33px;
+    padding: 5px;
+    border: dashed 1px $primarygrey;
+    box-shadow: 5px 5px 5px #3ac3dd;
+  }
+
+  #first_date:hover {
+    box-shadow: 5px 5px 5px#ffe000;
+    cursor: pointer;
+  }
+
+  #second_date:hover {
+    box-shadow: 5px 5px 5px#ffe000;
+    cursor: pointer;
+  }
+
+  #kms:hover {
+    box-shadow: 5px 5px 5px#ffe000;
+    cursor: pointer;
+  }
+  
+  .search_container {
+    border-radius: 100%;
+    background-color: #3ac3dd;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: $breakpoint) 
+    {
+    margin-top: 10px;
+    }
+
+  }
+  .search_container:hover {
+    background-color: #ffe000;
+    cursor: pointer;
+  }
+  
+  .fa-hand-sparkles {
+    color: $primarywhite;
+  
+  }
+
+
+  .video_container {
+
+      display: flex;
+      justify-content: center;
+      border-radius: 40px;
+
+    .iframe_c {
+
+      border: solid 2px $primaryblue;
+      box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.196);
+    }
+    
+  }
+
+  .wide_container_secondary {
+
+    width: 100%;
+    position: absolute;
+    top: 228px;
+    @media (max-width: $breakpoint) 
+    {
+      top: 460px;
+    }
+    @media (max-width: 650px) 
+    {
+      top: 775px;
+    }
+
+
+
+
+    .overlay_container {
+
+      border: solid 2px $primaryblue;
+      border-radius: 40px;
+      display: none;
+      flex-direction: row;
+      background-color: $primaryblack;
+      flex-wrap: wrap;
+      margin-top: 18px;
+      
+      .item_container {
+        flex-grow: 1;
+        border-radius: 33px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin: 25px;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.984);
+        .title {
+          font-weight: 700;
+          padding: 10px;
+          text-transform: uppercase;
+          font-size: 28px;
+          color: $primarypink;
+          @media (max-width: 440px) 
+          {
+            
+            font-size: 18px;
+          }
+        }
+
+
+
+        .img_c {
+          width: 400px;
+          height: 270px;
+          object-fit: cover;
+          border-radius: 33px;
+          @media (max-width:440px) 
+          {
+            width: 200px;
+            height: 135px;
+            object-fit: cover;
+          }
+          
+        }
+
+
+     
+        .container_horizontal {
+          font-size: 16px;
+          width: 400px;
+          
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          color: $primarygrey;
+          padding: 10px;
+          @media (max-width: 440px) 
+          {
+            font-size: 12px;
+            width: 220px;
+            
+     
+          }
+          .passengers_number_var { @media (max-width: 440px) 
+          {
+            display: none;
+     
+          }
+          }
+
+        }
+        .container_horizontal_secondary {
+          width: 400px;
+          display: flex;
+          justify-content: space-evenly;
+          padding-bottom: 10px;
+          @media (max-width: 440px) 
+          {
+            width: 200px;
+            
+     
+          }
+        }
+
+        .blue_text {
+          font-size: 18px;
+          color: #234baf;
+          font-weight: 700;
+          @media (max-width: 440px) 
+          {
+            font-size: 12px;
+            
+     
+          }
+
+          
+        }
+
+        .totals {
+          font-size: 18px;
+          color: black;
+          font-weight: 700;
+          @media (max-width: 440px){
+            font-size: 12px;
+            
+     
+          }
+    
+        }
+        .book_button_container {
+          display: flex;
+          justify-content: center;
+          width: 300px;
+          padding: 15px;
+          font-size: 20px;
+          border-radius: 16px;
+          color: white;
+          background-color: $primaryblue;
+          box-shadow: 5px 5px rgba(0, 204, 255, 0.717);
+          margin-bottom: 20px;
+          @media (max-width: 440px) 
+          {
+            width: 100px;
+            font-size: 14px;
+          }
+        }
+
+        .book_button_container:hover {
+          color: black;
+          background-color: #ffe000;
+          cursor: pointer;
+        }
+        .book_button_container_x {
+          display: flex;
+          justify-content: center;
+          width: 300px;
+          padding: 15px;
+          font-size: 20px;
+          border-radius: 16px;
+          color: white;
+          background-color: $primaryblue;
+          box-shadow: 5px 5px rgba(0, 204, 255, 0.717);
+          margin-bottom: 20px;
+          @media (max-width: 440px) 
+          {
+            width: 100px;
+            font-size: 14px;
+          }
+        }
+        .book_button_container_x:hover {
+          color: black;
+          background-color: #ffe000;
+          cursor: pointer;
+          
+        }
+      }
+
+    }
+  }
+  #fa_car {
+    transition: background-color 1s;
+    transition: padding 1s;
+  }
+
+  #fa_car:hover {
+    color: black;
+    background-color: #ffe000;
+    cursor: pointer;
+    padding: 20px;
+    
+  }
+  .title_web {
+
+    margin-top: 25px;
+    font-weight: 700;
+    font-size: 48px;
+    @media (max-width: 650px) 
+    {
+    font-size: 44px;
+  
+    }
+  }
+
+  .title_a {
+    font-weight: 700;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 80px;
+    color: $primarypink;
+    padding-bottom: 25px;
+    @media (max-width: 440px) 
+          {
+            
+            font-size: 36px;
+          }
+  }
+  .title_b {
+    font-weight: 700;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 60px;
+    color: $primarypink;
+
+
+    padding-bottom: 25px;
+    @media (max-width: 440px) 
+          {
+            
+            font-size: 36px;
+          }
+  }
+
+#bonneville {
+  display: none;
+}
+
+#smart {
+  display: none;
+}
+
+
+#tesla {
+  display: none;
+}
+
+
+#bulli {
+  display: none;
+}
+
+
+#page_broken {
+  display: none;
+}
+
+
+#dates_unavailable {
+  display: none;
+
+}
+
+#ev_info {
+  display: none;
+}
+
+.fa-kiwi-bird {
+  color: #ffe000;
+}

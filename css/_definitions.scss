@@ -1,0 +1,61 @@
+//definitions
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ a {
+   color: white;
+ }
+
+
+
+// primary colors 
+$primaryblack: black;
+$primarywhite: white;
+$primarygrey: #766D6D;
+$secondarygrey: #C4C4C4;
+$primaryblue: #507DF0;
+$primaryfont: 'Open Sans';
+$breakpoint: 843px;
+$primarypink: rgba(237, 9, 89, 0.789);
+
+
+//specs 
+// 2 screens, mobile W 320, H 568; ipad/web W 1366, H 1024. Breakpoint 843px;
+
+//mixins
+
+
+
+// .example_sass_code {
+// @include grand_width_flex();
+// justify-content: space-around;
+//     .aref-container {
+//         width: 66.66%;
+//         text-decoration: none;
+        
+//         @media (min-width: $breakpoint) {
+//             width: 300px;
+//         }
+//         .global-button-orange {
+//             text-align: center;
+//             color: black;
+//             box-shadow: 5px 5px rgba(255, 124, 30, 0.53);
+//         }
+//     }
+    
+// }
+
+@mixin row_width () {
+  width: 100%;
+}
+
+body {
+  background-color: rgba(237, 9, 89, 0.789);
+  font-family: 'Comfortaa', cursive;
+  color: white;
+
+}

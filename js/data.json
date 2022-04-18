@@ -1,0 +1,12 @@
+{
+    "bonneville":{ "name":"Triumph Bonneville", "type": "Motorcycle", "auto": "Manual", "min_passengers": 1, "max_passengers": 1, "daily_cost": 109, "min_days": 1, "max_days": 5, "petrol": "3.7", "img": "insert-img"},
+    
+    "smart":{ "name":"Smart Fortwo", "type": "EV Small Car", "auto": "Automatic", "min_passengers": 1, "max_passengers": 2, "daily_cost": 129, "min_days": 1, "max_days": 10, "petrol": "8.5", "img": "insert-img"},
+    
+    "tesla":{ "name":"Tesla Model S Plaid", "type": "EV Large car", "auto": "Automatic", "min_passengers": 1, "max_passengers": 5, "daily_cost": 144, "min_days": 1, "max_days": 10, "petrol": "9.7", "img": "insert-img"},
+    
+    "bulli":{ "name":"VW E-Bulli", "type": "EV Motor home", "auto": "Automatic", "min_passengers": 2, "max_passengers": 6, "daily_cost": 200, "min_days": 2, "max_days": 15, "petrol": "17", "img": "insert-img"}
+    
+}
+
+   
